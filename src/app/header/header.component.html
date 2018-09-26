@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="col-xs-2 logo">
+    <a href="#">
+      <img src="/assets/images/indexlogo.png" class="img-responsive" title="Visa logo"> </a>
+  </div>
+  <div class="col-xs-10 visa-section" #visaMenuList>
+    <ul class="visa-section-data pull-right">
+      <li *ngFor="let nav of navItems; let i = index" (click)="navItemClick($event, i)">
+        <a [ngClass]="{active: selectedItemIndex === i}" href="#">{{nav}}</a>
+      </li>
+      <li (click)="navItemClick($event, navItems.length)" [ngClass]="{active: selectedItemIndex === navItems.length}">
+        <span class="glyphicon glyphicon-menu-hamburger visible-xs " aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </li>
+    </ul>
+    <img [hidden]="!navArrowImg" [ngStyle]="{left: animateLeftDistance}" src="/assets/images/arrow-up.png" class="upArrow" />
+  </div>
+</div>

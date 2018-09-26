@@ -1,0 +1,117 @@
+.container{
+	padding:15px 15px;
+}
+.container a{
+	cursor:pointer;
+	display:inline-block;
+}
+.logo{
+	padding-top: 9px;
+	display:inline-block;
+}
+.logo img{
+	height:40px;
+}
+.upArrow{
+    width:30px;
+	height: 10px;
+	position: absolute;
+    bottom: -19px;
+    transition: left 1s ease-out;
+    
+}
+.visa-section-data{
+	padding-left: 0px;
+	list-style-type: none;
+	margin-bottom:0px;
+}
+.visa-section-data > li{
+	display:inline-block;
+}
+.visa-section-data > li:nth-last-child(1){
+	border-left:1px solid #ffffff40;
+	    padding: 15px 0px;
+}
+.visa-section-data > li > span{
+	color:#f7b600;
+	font-size: 21px;
+	padding-left: 25px;
+	cursor:pointer;
+}
+.visa-section-data > li > a{
+	display:inline-block;
+	padding:15px 24px;
+	color:#ffffffd9;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.visa-section-data > li > a:hover{
+	color:#f7b600;
+}
+.visa-section-data > li > a.active{
+	color:#f7b600;
+}
+@media screen and (max-width: 1200px){
+	.visa-section-data > li > a {
+	   padding: 15px 10px;
+   		font-size: 17px;
+	}
+	.container{
+		width:initial;
+		padding-left:0px;
+		padding-right: 0px; 
+	}
+	.visa-section{
+        padding-left: 0px;
+        position: relative;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.visa-section-data > li > a {
+	   padding: 15px 6px;
+   		font-size: 13px;
+	}	
+}
+/* @media screen and (max-width: 767px){
+	.visa-menu li:last-child{
+		position: relative;
+	}
+	.glyphicon-menu-hamburger{
+		    position: absolute;
+		    left: -65px;
+		    top: 14px;
+	}
+	.arrow-up{
+		display: none;
+	}
+} */
+/* .mobile-visa-menu-list{
+	position: absolute;
+    background: #dedede;
+    left: 0;
+    top: 99px;
+    display: none;
+}
+.mobile-visa-menu-list ul{
+	margin:0px;
+	padding: 0px;
+}
+.mobile-visa-menu-list ul li{
+	list-style-type: none;;
+	padding: 30px;
+	border-bottom:1px solid #ccc;
+}
+.mobile-visa-menu-list ul li a{
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #1a1f71;
+}
+.mobile-visa-menu-list ul li a span{
+	padding-right: 20px;
+}
+.mobile-visa-menu-list ul li a:hover{
+
+} */
